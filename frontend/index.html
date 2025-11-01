@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sehat Sathi - AI Symptom Check & Healthcare Assistance</title>
+    <meta name="description" content="AI-first symptom check and healthcare assistance. Get trusted AI guidance in your language in under a minute.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logoSehat.png" alt="Sehat Sathi Logo" class="logo-img">
+                    <span>Sehat Sathi</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#how-it-works" class="nav-link">How it Works</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#who-benefits" class="nav-link">Who Benefits</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="nav-right">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <div class="language-btn">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="language-dropdown">
+                            <div class="language-option" data-lang="en">English</div>
+                            <div class="language-option" data-lang="hi">Hindi</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Check Symptoms CTA -->
+                    <button class="btn btn-primary" id="check-symptoms-btn">Check Symptoms</button>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#how-it-works" class="mobile-nav-link">How it Works</a>
+                    <a href="#features" class="mobile-nav-link">Features</a>
+                    <a href="#who-benefits" class="mobile-nav-link">Who Benefits</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-slideshow">
+                <div class="slide slide-1 active"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Every Health Problem, One AI Solution</h1>
+                    <div class="hero-subtitle">
+                        <span class="typewriter" id="typewriter-text">No More Confusion</span>
+                    </div>
+                    <p class="hero-description">
+                        Describe your symptoms, get trusted AI guidance, and connect with real help all in under a minute, in your language.
+                    </p>
+                    
+                    <div class="hero-badges">
+                        <div class="badge">
+                            <i class="fas fa-language"></i>
+                            <span>Available in 8+ Regional languages</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-large" id="hero-cta">Check Symptoms</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="section how-it-works" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How Sehat Sathi Works</h2>
+                
+                <div class="steps-container">
+                    <div class="step-card card">
+                        <div class="step-icon">
+                            <i class="fas fa-comment-medical"></i>
+                        </div>
+                        <h3 class="step-title">Describe Symptoms</h3>
+                        <p>User types or uses quick selectors / voice input.</p>
+                    </div>
+                    
+                    <div class="step-card card">
+                        <div class="step-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="step-title">AI Triage</h3>
+                        <p>Model analyzes symptoms, suggests likely causes, urgency, and next steps.</p>
+                    </div>
+                    
+                    <div class="step-card card">
+                        <div class="step-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="step-title">Trusted Guidance</h3>
+                        <p>Localized instructions and content in user's selected language.</p>
+                    </div>
+                    
+                    <div class="step-card card">
+                        <div class="step-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="step-title">Connect to Help</h3>
+                        <p>Connect to telemedicine / local providers or emergency guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section features" id="features">
+            <div class="container">
+                <h2 class="section-title">Powerful Future-Ready Features</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="feature-title">Multilingual AI</h3>
+                        <p>AI that understands and responds in multiple regional languages.</p>
+                    </div>
+                    
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="feature-title">Urgency Scoring</h3>
+                        <p>Prioritize symptoms based on severity and urgency levels.</p>
+                    </div>
+                    
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Privacy-first Data Store</h3>
+                        <p>Your health data is encrypted and stored securely with privacy controls.</p>
+                    </div>
+                    
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3 class="feature-title">Offline-capable PWA</h3>
+                        <p>Works even with limited or no internet connectivity.</p>
+                    </div>
+                    
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3 class="feature-title">Local Clinic Integration</h3>
+                        <p>Seamlessly connect with nearby healthcare providers.</p>
+                    </div>
+                    
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3 class="feature-title">Secure Reports (PDF)</h3>
+                        <p>Download or share your health reports securely in PDF format.</p>
+                    </div>
+                    
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-title">Analytics Dashboard</h3>
+                        <p>Track your health trends and get personalized insights.</p>
+                    </div>
+                    
+                    <div class="feature-card card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-title">24/7 AI & Human Escalation</h3>
+                        <p>AI assistance with seamless escalation to human experts when needed.</p>
+                    </div>
+                </div>
+                
+                <div class="partners-section">
+                    <p class="partners-title">Logos that help: Hospitals, Labs, Telemedicine Partners, NGOs</p>
+                    <div class="partners-carousel" id="partners-carousel">
+                        <div class="partner-logo">Hospital A</div>
+                        <div class="partner-logo">Lab Network</div>
+                        <div class="partner-logo">TeleMed Co</div>
+                        <div class="partner-logo">Health NGO</div>
+                        <div class="partner-logo">Clinic Chain</div>
+                        <div class="partner-logo">Pharma Corp</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who Benefits Section -->
+        <section class="section who-benefits" id="who-benefits">
+            <div class="container">
+                <h2 class="section-title">Who Benefits from Sehat Sathi?</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 3rem;">Designed to help millions — built for rural & urban users</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="benefit-title">Villagers</h3>
+                        <p class="benefit-description">Access to healthcare guidance in remote areas</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <h3 class="benefit-title">Farmers</h3>
+                        <p class="benefit-description">Health support for agricultural communities</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3 class="benefit-title">Women</h3>
+                        <p class="benefit-description">Private and accessible healthcare for women</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3 class="benefit-title">Children</h3>
+                        <p class="benefit-description">Early symptom detection for child health</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="benefit-title">ASHA Workers</h3>
+                        <p class="benefit-description">Support tools for community health workers</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="benefit-title">Senior Citizens</h3>
+                        <p class="benefit-description">Easy-to-use health monitoring for seniors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section why-choose-us" id="why-choose-us">
+            <div class="container">
+                <h2 class="section-title">Why Choose Sehat Sathi</h2>
+                
+                <div class="benefits-container">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div>
+                            <h3>Accuracy-first AI</h3>
+                            <p>Our AI is trained on diverse medical data for reliable symptom assessment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3>Fast results (<60s)</h3>
+                            <p>Get AI-powered insights in under a minute, saving you time and worry.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div>
+                            <h3>Available in regional languages</h3>
+                            <p>Communicate in your preferred language for better understanding.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div>
+                            <h3>24/7 support</h3>
+                            <p>Round-the-clock assistance whenever you need healthcare guidance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Localized regional health content</h3>
+                            <p>Health information tailored to your region and local health concerns.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reach-estimate">
+                    <p>Designed to help millions — built for rural & urban users. Expected reach: ~1M+ users (scalable).</p>
+                </div>
+                
+                <div class="testimonials">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Sehat Sathi helped me understand my symptoms when I couldn't visit a doctor immediately. The guidance was clear and reassuring."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>New Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"As someone who doesn't speak English well, the regional language support made all the difference. Thank you Sehat Sathi!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Bihar</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The AI accurately identified my condition and connected me with a local doctor. The entire process was seamless and efficient."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Anita Patel</h4>
+                                <p>Gujarat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="ready-to-use">
+            <div class="container">
+                <h2 class="cta-title">Ready to use Sehat Sathi?</h2>
+                <p class="cta-description">Start now — check symptoms in seconds. Create an account to save your reports and access personalized recommendations.</p>
+                <button class="btn btn-secondary btn-large" id="cta-button">Check Symptoms</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Medical Bot Page -->
+    <section class="medical-bot-page" id="medical-bot-page">
+        <div class="container">
+            <div class="medical-bot-page-header">
+                <h1 class="medical-bot-page-title">🩺 AI Medical Assistant</h1>
+                <p class="medical-bot-page-subtitle" id="medical-bot-user-greeting">Hello! I'm here to help assess your symptoms.</p>
+            </div>
+            
+            <div class="medical-bot-container">
+                <!-- Left Panel - Triage Chat -->
+                <div class="medical-chat-container">
+                    <div class="medical-chat-header">
+                        <h3>AI Health Assistant</h3>
+                    </div>
+                    <div class="medical-chat-messages" id="medical-chat-messages">
+                        <div class="message bot">
+                            <p>Hello! I'm your AI health assistant. Please describe your symptoms or select them from the list on the right.</p>
+                        </div>
+                    </div>
+                    <div class="medical-chat-input">
+                        <input type="text" id="medical-chat-input" placeholder="Type your response here...">
+                        <button id="voice-input-btn">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <button id="send-message-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Right Panel - Symptom Selection -->
+                <div class="symptom-selection">
+                    <h3 class="symptom-selection-title">Select Your Symptoms</h3>
+                    
+                    <div class="symptom-category-selection">
+                        <h4 class="symptom-category-title normal">🔹 Normal Symptoms</h4>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-fever" name="medical-symptoms" value="Fever">
+                            <label for="medical-fever">Fever</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-headache" name="medical-symptoms" value="Headache">
+                            <label for="medical-headache">Headache</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-cold" name="medical-symptoms" value="Cold">
+                            <label for="medical-cold">Cold</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-cough" name="medical-symptoms" value="Cough">
+                            <label for="medical-cough">Cough</label>
+                        </div>
+                    </div>
+                    
+                    <div class="symptom-category-selection">
+                        <h4 class="symptom-category-title moderate">🔸 Moderate Symptoms</h4>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-chest-pain" name="medical-symptoms" value="Chest Pain">
+                            <label for="medical-chest-pain">Chest Pain</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-vomiting" name="medical-symptoms" value="Vomiting">
+                            <label for="medical-vomiting">Vomiting</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-dizziness" name="medical-symptoms" value="Dizziness">
+                            <label for="medical-dizziness">Dizziness</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-abdominal-pain" name="medical-symptoms" value="Abdominal Pain">
+                            <label for="medical-abdominal-pain">Abdominal Pain</label>
+                        </div>
+                    </div>
+                    
+                    <div class="symptom-category-selection">
+                        <h4 class="symptom-category-title severe">🔴 Severe Symptoms</h4>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-high-fever" name="medical-symptoms" value="High Fever">
+                            <label for="medical-high-fever">High Fever</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-breathing-problem" name="medical-symptoms" value="Breathing Problem">
+                            <label for="medical-breathing-problem">Breathing Problem</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-unconsciousness" name="medical-symptoms" value="Unconsciousness">
+                            <label for="medical-unconsciousness">Unconsciousness</label>
+                        </div>
+                        <div class="symptom-checkbox">
+                            <input type="checkbox" id="medical-severe-bleeding" name="medical-symptoms" value="Severe Bleeding">
+                            <label for="medical-severe-bleeding">Severe Bleeding</label>
+                        </div>
+                    </div>
+                    
+                    <div class="medical-bot-actions">
+                        <button class="btn btn-primary" id="analyze-symptoms">Analyze Symptoms</button>
+                        <button class="btn btn-secondary" id="clear-symptoms">Clear Selection</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-secondary" id="back-to-home">Back to Home</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Modal -->
+    <div class="location-modal" id="location-modal">
+        <div class="location-modal-content">
+            <div class="location-modal-header">
+                <h3 class="location-modal-title">Find Nearby Hospitals</h3>
+                <button class="close-location-modal" id="close-location-modal">&times;</button>
+            </div>
+            
+            <div class="location-info">
+                <p>We need your location to find the nearest hospitals. Please allow location access when prompted.</p>
+            </div>
+            
+            <div class="map-container" id="map-container">
+                <p>Map will load here after location permission is granted</p>
+            </div>
+            
+            <div class="location-actions">
+                <button class="btn btn-primary" id="get-location-btn">Get My Location</button>
+                <button class="btn btn-secondary" id="open-google-maps">Open Google Maps</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call Modal -->
+    <div class="call-modal" id="call-modal">
+        <div class="call-modal-content">
+            <div class="call-modal-header">
+                <h3 class="call-modal-title">Call Volunteer</h3>
+                <button class="close-call-modal" id="close-call-modal">&times;</button>
+            </div>
+            
+            <div class="call-info">
+                <p>You can call our volunteer helpline for immediate assistance.</p>
+            </div>
+            
+            <div class="dial-display" id="dial-display">+91-9876543210</div>
+            
+            <div class="dial-pad">
+                <button class="dial-button" data-number="1">1</button>
+                <button class="dial-button" data-number="2">2</button>
+                <button class="dial-button" data-number="3">3</button>
+                <button class="dial-button" data-number="4">4</button>
+                <button class="dial-button" data-number="5">5</button>
+                <button class="dial-button" data-number="6">6</button>
+                <button class="dial-button" data-number="7">7</button>
+                <button class="dial-button" data-number="8">8</button>
+                <button class="dial-button" data-number="9">9</button>
+                <button class="dial-button" data-number="*">*</button>
+                <button class="dial-button" data-number="0">0</button>
+                <button class="dial-button" data-number="#">#</button>
+            </div>
+            
+            <div class="call-actions">
+                <button class="btn btn-primary" id="call-now-btn">Call Now</button>
+                <button class="btn btn-secondary" id="clear-number">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Video Call Modal -->
+    <div class="video-call-modal" id="video-call-modal">
+        <div class="video-call-container">
+            <div class="video-call-header">
+                <h3 class="video-call-title">Video Consultation with Doctor</h3>
+                <button class="close-video-call" id="close-video-call">&times;</button>
+            </div>
+            
+            <div class="video-call-content">
+                <div class="video-feed" id="video-feed">
+                    <div class="video-container">
+                        <div class="video-placeholder" id="remote-video-placeholder">
+                            <i class="fas fa-user-md"></i>
+                            <p>Connecting to Dr. Sharma...</p>
+                            <div class="connecting-animation">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <video class="remote-video" id="remote-video" autoplay playsinline style="display: none;"></video>
+                        
+                        <!-- Local video preview -->
+                        <div class="local-video-preview" id="local-video-preview" style="display: none;">
+                            <video class="local-video" id="local-video" autoplay playsinline muted></video>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="whatsapp-info" id="whatsapp-info" style="display: none;">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Calling via WhatsApp to Dr. Sharma...</span>
+                </div>
+                
+                <div class="call-status" id="call-status">
+                    Initializing video call... Please wait
+                </div>
+                
+                <div class="call-controls">
+                    <button class="call-control-btn mute" id="mute-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="call-control-btn video" id="video-btn">
+                        <i class="fas fa-video"></i>
+                    </button>
+                    <button class="call-control-btn whatsapp" id="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    <button class="call-control-btn end-call" id="end-call-btn">
+                        <i class="fas fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="logoSehat.png" alt="Sehat Sathi Logo" class="footer-logo-img">
+                        <span>Sehat Sathi</span>
+                    </div>
+                    <p class="footer-description">
+                        AI-first symptom check and healthcare assistance. Get trusted AI guidance in your language in under a minute.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#how-it-works">How it Works</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#who-benefits">Who Benefits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@sehatsathi.com</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Health Tech Park, Bangalore, India</li>
+                    </ul>
+                    <div class="footer-badges" style="margin-top: 1.5rem;">
+                        <div class="badge">
+                            <i class="fas fa-language"></i>
+                            <span>Available in 8+ Regional languages</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Made with <i class="fas fa-heart" style="color: #e74c3c;"></i> by Sehat Sathi Team • © 2023 Sehat Sathi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Signup Modal -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Welcome to Sehat Sathi</h3>
+                <button class="close-modal" id="close-auth-modal">&times;</button>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab" data-tab="signup">Sign Up</div>
+                <div class="tab active" data-tab="login">Login</div>
+            </div>
+
+            <div class="tab-content" id="signup-tab">
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name" class="form-label">Full Name</label>
+                        <input type="text" id="signup-name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-email" class="form-label">Email or Phone</label>
+                        <input type="text" id="signup-email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-password" class="form-label">Password</label>
+                        <input type="password" id="signup-password" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-language" class="form-label">Preferred Language</label>
+                        <select id="signup-language" class="form-control" required>
+                            <option value="">Select Language</option>
+                            <option value="en">English</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="allow-location">
+                            <label for="allow-location">Allow location access for better healthcare recommendations</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" required>
+                            <label for="consent">I agree to the Terms of Service and Privacy Policy</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p>Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="tab-content active" id="login-tab">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email" class="form-label">Email or Phone</label>
+                        <input type="text" id="login-email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password" class="form-label">Password</label>
+                        <input type="password" id="login-password" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p>Don't have an account? <a href="#" id="switch-to-signup">Sign up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

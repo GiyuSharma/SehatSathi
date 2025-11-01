@@ -290,7 +290,7 @@ console.log(result);
 ## 👥 Support
 
 For queries or contributions, contact the **SehatSaathi Development Team**  
-💌 Email: [support@sehat-saathi.in](mailto:support@sehat-saathi.in)
+💌 Email: dishanksingh36@gmail.com
 
 ---
 
